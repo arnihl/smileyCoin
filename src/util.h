@@ -402,13 +402,6 @@ inline int64_t GetTimeMicros()
 
 std::string DateTimeStrFormat(const char* pszFormat, int64_t nTime);
 
-template<typename T>
-void skipspaces(T& it)
-{
-    while (isspace(*it))
-        ++it;
-}
-
 inline bool IsSwitchChar(char c)
 {
 #ifdef WIN32
